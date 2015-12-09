@@ -1,5 +1,5 @@
-Dr Websight
-============
+Dr Websight Client
+===================
 
 A webpack-based React application to ping saved website URLs and display their status on a dashboard.
 
