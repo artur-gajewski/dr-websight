@@ -1,0 +1,8 @@
+/.idea
+node_modules/
+composer.phar
+src/config.js
+src/*.css
+dist/*
+config.js
+npm-debug*
