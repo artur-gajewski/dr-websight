@@ -9,11 +9,7 @@ export function pingWebsite(url) {
         api.pingWebsite(url).then((response) => {
             dispatch({
                 type: RECEIVE_STATUS,
-                payload: {
-                    url: url,
-                    code: response.status,
-                    description: response.statusText
-                }
+                payload: response
             })
         })
     }

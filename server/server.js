@@ -22,6 +22,13 @@ server.post('/ping', function create(req, res, next) {
                 "url": req.body.url
             });
             return next();
+        } else {
+            res.send(200, {
+                "code": 404,
+                "description": "FAIL",
+                "url": req.body.url
+            });
+            return next();
         }
     })
  });

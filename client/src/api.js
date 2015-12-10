@@ -9,7 +9,7 @@ export default {
                 { 'Content-Type': 'application/json'}
             )
             .then(function(response) {
-                return response;
+                return response.data;
             })
             .catch(function (response) {
                 return {
