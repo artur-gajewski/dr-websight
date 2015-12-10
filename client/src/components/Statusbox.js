@@ -12,7 +12,8 @@ const Statusbox = (props) => {
     var colors = {
         200: "green",
         404: "danger",
-        500: "yellow"
+        500: "yellow",
+        "DNS-3": "danger"
     };
 
     console.log("---->", status.code);
