@@ -44,11 +44,10 @@ class App extends React.Component {
     componentDidMount() {
         const { dashboardActions } = this.props;
 
-        dashboardActions.pingWebsite('http://www.arturgajewski.com');
-        dashboardActions.pingWebsite('http://www.yle.fi');
+        dashboardActions.pingWebsite('http://www.arturgajewskffi.com');
+        dashboardActions.pingWebsite('http://www.arturgajewski.com/piano');
         dashboardActions.pingWebsite('http://www.virtuaalihepat.com');
-        dashboardActions.pingWebsite('http://www.fraktio.fi');
-        dashboardActions.pingWebsite('http://www.sivua.ei.ole.olemassa.fi');
+
     }
 
 };
