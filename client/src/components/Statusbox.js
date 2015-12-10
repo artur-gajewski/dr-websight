@@ -9,11 +9,34 @@ const Statusbox = (props) => {
     var Row = require('react-bootstrap/lib/Row');
     var Col = require('react-bootstrap/lib/Col');
 
+    var colors = {
+        200: "green",
+        404: "danger",
+        500: "yellow"
+    };
+
+    console.log("---->", status.code);
+
+    var statusColor = colors[status.code];
+
+    const widgetClass = classnames(
+        'panel',
+        'widget',
+        'bg-' + statusColor
+    );
+
+    const statusClass = classnames(
+        'col-xs-4',
+        'text-center',
+        'bg-' + statusColor + '-dark',
+        'pv-lg'
+    );
+
     return (
         <Col className="col-lg-6 col-m-6">
-            <div className="panel widget bg-primary">
+            <div className={widgetClass}>
                 <Row className="row row-table">
-                    <Col className="col-xs-4 text-center bg-primary-dark pv-lg">
+                    <Col className={statusClass}>
                         <div className="h2 mt0">{status.code}</div>
                         <div className="text-uppercase">{status.description}</div>
                     </Col>
