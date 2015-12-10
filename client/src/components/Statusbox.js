@@ -9,8 +9,6 @@ const Statusbox = (props) => {
     var Row = require('react-bootstrap/lib/Row');
     var Col = require('react-bootstrap/lib/Col');
 
-    console.log(status);
-
     return (
         <Col className="col-lg-6 col-m-6">
             <div className="panel widget bg-primary">

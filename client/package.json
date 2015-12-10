@@ -1,5 +1,5 @@
 {
-  "name": "yle-comments-admin",
+  "name": "dr-websight",
   "version": "1.0.0",
   "description": "Admin front for moderating Yle Comments",
   "main": "src/client.js",

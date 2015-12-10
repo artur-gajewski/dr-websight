@@ -46,6 +46,8 @@ class App extends React.Component {
 
         dashboardActions.pingWebsite('http://www.arturgajewski.com');
         dashboardActions.pingWebsite('http://www.yle.fi');
+        dashboardActions.pingWebsite('http://www.virtuaalihepat.com');
+        dashboardActions.pingWebsite('http://www.fraktio.fi');
     }
 
 };

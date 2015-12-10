@@ -3,7 +3,11 @@ import config from '../config.js';
 
 export default {
     pingWebsite: (url) => {
-        return axios.get(url)
+        return axios.post(
+                config.apiUrl + '/ping',
+                { url: url },
+                { 'Content-Type': 'application/json'}
+            )
             .then(function(response) {
                 return response;
             })
