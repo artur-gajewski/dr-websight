@@ -6,3 +6,4 @@ src/*.css
 dist/*
 config.js
 npm-debug*
+common/config.js
