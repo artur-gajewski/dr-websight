@@ -16,8 +16,6 @@ const Statusbox = (props) => {
         "DNS-3": "danger"
     };
 
-    console.log("---->", status.code);
-
     var statusColor = colors[status.code];
 
     const widgetClass = classnames(

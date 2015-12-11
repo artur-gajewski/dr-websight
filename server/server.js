@@ -25,7 +25,7 @@ server.post('/ping', function create(req, res, next) {
         } else {
             res.send(200, {
                 "code": "DNS-3",
-                "description": "Domain not found",
+                "description": "Not Found",
                 "url": req.body.url
             });
             return next();
