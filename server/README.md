@@ -15,6 +15,8 @@ Installation
 - npm -v
 - if your npm is still 2.x: npm -g update npm
 - npm install
+- copy default.json.example to default.json
+- docker run --name dr-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -d postgres
 
 Running
 --------
